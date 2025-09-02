@@ -13,10 +13,10 @@ Requirements (Core Libraries to install):
 8.) pytest
 
 > .github
-    - 
+    - For CI/CD pipelines
 
 > api
-    - 
+    -  FastAPI app + Dockerfile 
 
 > data
     - CSV file containing labeled data in format of: 
@@ -24,13 +24,13 @@ Requirements (Core Libraries to install):
     - DB tha holds the tables containing the data
 
 > monitoring
-    - 
+    - Drift detection, logging scripts
 
 > notebooks
-    - 
+    - EDA and experiments
 
 > src
-    - 
+    - Training, preprocessing, utilities
 
 > tests
-    - 
+    - Unit and integration tests
