@@ -1,4 +1,3 @@
-# Customer-Churn-Prediction
 End-to-end MLOps pipeline that predicts if a customer is likely to leave a telecom company
 
 Requirements (Core Libraries to install):
@@ -12,6 +11,7 @@ Requirements (Core Libraries to install):
 7.) evidently
 8.) pytest
 9.) mysql-connector-python
+10.) Python 3.11.9
 
 > .github
     - For CI/CD pipelines
@@ -39,3 +39,8 @@ Requirements (Core Libraries to install):
 
 > tests
     - Unit and integration tests
+
+For database:
+> downloaded csv
+> used import wizard in mysql to populate a table with data
+
