@@ -12,6 +12,7 @@ Requirements (Core Libraries to install):
 8.) pytest
 9.) mysql-connector-python
 10.) Python 3.11.9
+11.) pymysql sqlalchemy
 
 > .github
     - For CI/CD pipelines
@@ -43,4 +44,21 @@ Requirements (Core Libraries to install):
 For database:
 > downloaded csv
 > used import wizard in mysql to populate a table with data
+
+NOTE:
+
+This project uses a MySQL database with sample data. Read-only access is available for exploration and testing.
+
+### Connection Details
+- **Host:** your_server_ip_or_domain
+- **Database:** churn_database  
+- **Username:** readonly_user
+- **Password:** SecurePassword123!
+- **Port:** 3306
+
+### Connecting to the Database
+
+**(bash) Using MySQL Command Line:**
+
+mysql -h your_server_ip -u readonly_user -p churn_database
 

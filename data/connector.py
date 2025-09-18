@@ -1,4 +1,5 @@
 import mysql.connector
+from sqlalchemy import create_engine
 
 Customerdb = mysql.connector.connect(
       host="localhost",
@@ -16,6 +17,9 @@ myresult = cursor.fetchone()
     # Iterate and print the data
 for x in myresult:
       print(x)
+
+
+#TODO: Create an object to contain data from table thatll be used in the preprocessing.py file
 
 cursor.close()
 
