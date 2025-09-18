@@ -12,20 +12,18 @@ cursor = Customerdb.cursor()
 
 cursor.execute("SELECT * FROM customerdata LIMIT 1;")
 
-    # Fetch all rows
 myresult = cursor.fetchone()
 
-    # Iterate and print the data
 for x in myresult:
       print(x)
 
 
-#TODO: Create an object to contain data from table thatll be used in the preprocessing.py file
 
 engine = create_engine("mysql://readonly_user:SecurePassword123!@localhost:3306/churn_database")
-df = pd.read_sql("SELECT * FROM customerdata", engine)
-print(df.head())
 
+df = pd.read_sql("SELECT * FROM customerdata", engine)
+
+#TODO: Create df as an object to be returned for use in preprocessing.py
 
 cursor.close()
 
